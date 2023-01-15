@@ -1,0 +1,296 @@
+@font-face {
+    font-family: "Century Gothic";
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Century Gothic", sans-serif;
+    background: #d2e1cd;
+    color: aqua;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+#siteTitle{
+    background: azure;
+    text-align: center;
+}
+    #siteTitle a{
+        color: bisque;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 10px 0;
+        display: inline-block;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    #siteTitle a:hover{
+        color: beige;
+    }
+
+header .headerimg{
+    height: 450px;
+    background-position: bottom center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+    header .headerimg .centerbox{
+        height: 100%;
+        position: relative;
+    }
+    header .headerimg section{
+        position: absolute;
+        bottom: 100px;
+        width: 90%;
+        left: 5%;
+        max-width: 450px;
+    }
+        header .headerimg section h3{
+            font-size: 16px;
+            background: aliceblue;
+            color: burlywood;
+            padding: 10px;
+            margin: 0 0 15px;
+        }
+        header .headerImage section a{
+            font-size: 16px;
+            background: blue;
+            color: blueviolet;
+            padding: 10px 20px;
+            display: inline-block;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+            header .headerImage section a:hover{
+                background: cadetblue;
+            }
+header nav{
+    background: darkgray;
+}
+    header nav ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+    }
+        header nav ul li{
+            display: inline-block;
+            width: 19%;
+        }
+            header nav ul li a{
+                display: inline-block;
+                text-decoration: none;
+                padding: 20px 0;
+                width: 100%;
+                color: dimgray;
+                transition: background 0.3s, color 0.3s;
+                font-size: 16px;
+                text-transform: uppercase;
+            }
+                header nav ul li a:hover{
+                    background: gold;
+                    color: goldenrod;
+                }
+
+#page{
+    padding: 30px;
+}
+    #page::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+#content{
+    float: right;
+    width: 71%;
+    min-height: 500px;
+}
+    #content section, #content article, #content > ul{
+        margin-right: 2.5%;
+        margin-top: 0;
+    }
+
+aside{
+    float: left;
+    width: 25%;
+    min-height: 500px;
+}
+
+ul.gallery{
+    margin: 0 0 30px;
+    padding: 0;
+    list-style: none;
+}
+    ul.gallery li{
+        width: 23%;
+        height: 120px;
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-bottom: 10px;
+        float: left;
+    }
+        ul.gallery li a{
+            display: block;
+            width: 100%;
+            height: 100%;
+            opacity: .75;
+            border: 1px solid whitesmoke;
+            transition: opacity .3s, border .3s;
+            overflow: hidden;
+        }
+            ul.gallery li a:hover{
+                border: 1px solid whitesmoke;
+                opacity: 1;
+            }
+            ul.gallery li a img
+            {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                transition: width 0.3s, height 0.3s;
+            }
+            ul.gallery li a img:hover
+            {
+                width: 110%;
+                height: 115%;
+            }
+
+#content form{
+    margin-bottom: 30px;
+    background: rgba(255,255,255,.5);
+    padding: 20px 3%;
+}
+    #content form label{
+        font-size: 14px;
+        display: block;
+    }
+    #content form input,
+    #content form select{
+        margin-bottom: 15px;
+        width: 95%;
+        border: 1px solid wheat;
+        padding: 7px 1%;
+        color: gray;
+    }
+    #inputname{
+        max-width: 600px;
+    }
+    #inputemail{
+        max-width: 300px;
+    }
+    #content form button{
+        cursor: pointer;
+        padding: 7px 20px;
+        background: cadetblue;
+        color: wheat;
+        transition: background .3s;
+        border: 0;
+        font-size: 95%;
+    }
+    #content form button.hover{
+        background: dodgerblue;
+    }
+    #content form input[type=submit]:hover
+    {
+        background: #c3beb8;
+    }
+    #content p.success
+    {
+        background: #e6ebe1;
+        color: #82aa73;
+        border: 1px solid #d2e1cd;
+        padding: 10px 2%;
+    }
+    #content p.error
+    {
+        background: #ece0e0;
+        color: #a97171;
+        border: 1px solid #e1cece;
+        padding: 10px 2%;
+    }
+
+aside section{
+    margin-bottom: 30px;
+    background: white;
+    padding-bottom: 15px;
+}
+    aside section h3{
+        margin: 0 0 30px;
+    }
+    aside section p{
+        margin: 0 0 10px;
+        color: dimgray;
+        font-size: 14px;
+        padding: 5px 4%;
+    }
+    aside section img{
+        width: 100%;
+    }
+    aside section ul{
+        margin: 0 0 10px;
+        color: gray;
+        font-size: 14px;
+        padding: 5px 4%;
+        list-style: none;
+    }
+        aside section ul li{
+            margin-bottom: 10px
+        }
+    aside section a{
+        color: cadetblue;
+        text-decoration: none;
+    }
+        aside section a:hover{
+            color: dodgerblue;
+        }
+
+footer{
+    /*background: blue;*/
+    padding-top: 30px;
+    padding-bottom: 50px;
+    color: red;
+    max-height: 75px;
+}
+    footer::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    footer .left{
+        width: 49%;
+        float: left;
+    }
+    footer .right{
+        width: 49%;
+        float: right;
+        text-align: right;
+    }
+    footer h4{
+        margin: 0 0 15px;
+        font-size: 15px
+    }
+    footer p{
+        margin: 0 0 15px;
+        font-size: 13px;
+    }
+    footer ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+        footer ul a{
+            color: #d2e1cd;
+            font-size: 13px;
+            text-decoration: none;
+        }
+            footer ul a:hover{
+                text-decoration: underline;
+            }
+
+.centerbox{
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
