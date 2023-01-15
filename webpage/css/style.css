@@ -6,17 +6,17 @@ body{
     padding: 0;
     font-family: "Century Gothic", sans-serif;
     background: #d2e1cd;
-    color: aqua;
+    color: black;
     font-size: 15px;
     line-height: 1.5;
 }
 
 #siteTitle{
-    background: azure;
+    background: white;
     text-align: center;
 }
     #siteTitle a{
-        color: bisque;
+        color: black;
         font-size: 18px;
         font-weight: bold;
         padding: 10px 0;
@@ -25,19 +25,24 @@ body{
         transition: color 0.3s;
     }
     #siteTitle a:hover{
-        color: beige;
+        color: blue;
     }
 
 header .headerimg{
     height: 450px;
     background-position: bottom center;
     background-attachment: fixed;
-    background-size: cover;
+    /*background-size: auto;*/
+    background-size: unset;
     position: relative;
 }
     header .headerimg .centerbox{
         height: 100%;
         position: relative;
+    }
+    header .headersection{
+        background: lightblue;
+        color: darkred;
     }
     header .headerimg section{
         position: absolute;
@@ -48,12 +53,12 @@ header .headerimg{
     }
         header .headerimg section h3{
             font-size: 16px;
-            background: aliceblue;
-            color: burlywood;
+            background: midnightblue;
+            color: white;
             padding: 10px;
             margin: 0 0 15px;
         }
-        header .headerImage section a{
+        header .headerimg section a{
             font-size: 16px;
             background: blue;
             color: blueviolet;
@@ -62,7 +67,7 @@ header .headerimg{
             text-decoration: none;
             transition: color 0.3s;
         }
-            header .headerImage section a:hover{
+            header .headerimg section a:hover{
                 background: cadetblue;
             }
 header nav{
@@ -117,6 +122,12 @@ aside{
     width: 25%;
     min-height: 500px;
 }
+    aside h3{
+        padding: 5px;
+    }
+    aside p{
+        margin: 10px;
+    }
 
 ul.gallery{
     margin: 0 0 30px;
@@ -212,7 +223,7 @@ ul.gallery{
     }
 
 aside section{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     background: white;
     padding-bottom: 15px;
 }
@@ -246,46 +257,46 @@ aside section{
             color: dodgerblue;
         }
 
-footer{
+.footerwannabe{
     /*background: blue;*/
     padding-top: 30px;
     padding-bottom: 50px;
-    color: red;
+    color: black;
     max-height: 75px;
 }
-    footer::after{
+    .footerwannabe::after{
         content: "";
         display: block;
         clear: both;
     }
-    footer .left{
+    .footerwannabe .left{
         width: 49%;
         float: left;
     }
-    footer .right{
+    .footerwannabe .right{
         width: 49%;
         float: right;
         text-align: right;
     }
-    footer h4{
+    .footerwannabe h4{
         margin: 0 0 15px;
         font-size: 15px
     }
-    footer p{
+    .footerwannabe p{
         margin: 0 0 15px;
         font-size: 13px;
     }
-    footer ul{
+    .footerwannabe ul{
         margin: 0;
         padding: 0;
         list-style: none;
     }
-        footer ul a{
-            color: #d2e1cd;
+        .footerwannabe ul a{
+            color: black;
             font-size: 13px;
             text-decoration: none;
         }
-            footer ul a:hover{
+            .footerwannabe ul a:hover{
                 text-decoration: underline;
             }
 
@@ -293,4 +304,9 @@ footer{
     width: 95%;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+#content article img{
+    width: 100%;
+    margin-bottom: 25px;
 }

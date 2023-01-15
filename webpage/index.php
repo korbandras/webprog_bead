@@ -3,12 +3,12 @@
 <h1>Welcome</h1>
 <article>
 <?php
-$intro = file_get_contents("content/idk.txt");
-$text = file_get_contents("content/idk.txt");
-$img = "content/idk.jpg";
+$intro = file_get_contents("content/intro.txt");
+$text = file_get_contents("content/article.txt");
+$img = "media/img.png";
 
 echo   '<h2 class = lead>'.$intro.'</h2>
-        <img src = "'.$img.'">
+        <img class = "legyenjo" src = "'.$img.'">
         <p>'.nl2br($text).'</p>'
 ?>
     <h2>Phasellus hendrerit malesuada pulvinar</h2>
@@ -30,5 +30,9 @@ foreach($valamitxt as $line){
 }
 echo'</ul></section>';
 ?>
+
+
+
+<?php include "include/aside.php"; ?>
 
 <?php include "include/end.php"; ?>

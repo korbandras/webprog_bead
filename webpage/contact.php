@@ -1,6 +1,7 @@
 <?php include "include/begin.php"; ?>
 
 <h1>Lorem ipsum dolor.</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet maxime neque ratione.</p>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias beatae consequatur dolor exercitationem fugit id laboriosam laudantium natus porro quidem repudiandae sint, suscipit vero.</p>
 
 <section>
@@ -13,8 +14,7 @@ if(isset($_POST["sendmail"])){
     echo '<p>Review: '.$_POST["review"].'</p>';
 }
 ?>
-    phpinfo();
-    <form method="post" action="DB.php">
+    <form method="post" action="contact.php">
         <div>
             <label for = "inputname">Your name</label>
             <input type="text" name="name" id="inputname" maxlength="200">
@@ -39,4 +39,5 @@ if(isset($_POST["sendmail"])){
     </form>
 </section>
 
+<?php include "include/aside.php"; ?>
 <?php include "include/end.php"; ?>
