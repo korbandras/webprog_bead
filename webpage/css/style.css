@@ -111,6 +111,7 @@ header nav{
     float: right;
     width: 71%;
     min-height: 500px;
+    text-align: justify;
 }
     #content section, #content article, #content > ul{
         margin-right: 2.5%;
@@ -214,7 +215,7 @@ ul.gallery{
         border: 1px solid #d2e1cd;
         padding: 10px 2%;
     }
-    #content p.error
+    #content p.fail
     {
         background: #ece0e0;
         color: #a97171;

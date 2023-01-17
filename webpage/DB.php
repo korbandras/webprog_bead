@@ -11,7 +11,7 @@ $name = $_POST['name'];
 $email = $_POST['email'];
 $review = $_POST['review'];
 
-$query = "INSERT INTO `webprog_data`(`name`,`email`,`review`) VALUES ('$user','$email','$review') ";
+$query = "INSERT INTO `webprog_data`(`name`,`email`,`review`) VALUES ('$name','$email','$review') ";
 
 mysqli_query($connection,$query);
 

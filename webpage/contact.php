@@ -9,9 +9,12 @@
 <?php
 if(isset($_POST["sendmail"])){
     echo '<p class = "success">Sent successfully</p>';
-    echo '<p>Name: '.$_POST["name"].'</p>';
-    echo '<p>Email: '.$_POST["email"].'</p>';
-    echo '<p>Review: '.$_POST["review"].'</p>';
+    //echo '<p>Name: '.$_POST["name"].'</p>';
+    //echo '<p>Email: '.$_POST["email"].'</p>';
+    //echo '<p>Review: '.$_POST["review"].'</p>';
+}
+else{
+    echo '<p class = "fail">Failed to send</p>';
 }
 ?>
     <form method="post" action="contact.php">
