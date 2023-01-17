@@ -12,8 +12,9 @@ body{
 }
 
 #siteTitle{
-    background: white;
+    background: lightcyan;
     text-align: center;
+    align-content: space-between;
 }
     #siteTitle a{
         color: black;
@@ -29,7 +30,7 @@ body{
     }
 
 header .headerimg{
-    height: 450px;
+    height: 350px;
     background-position: bottom center;
     background-attachment: fixed;
     /*background-size: auto;*/
@@ -40,6 +41,33 @@ header .headerimg{
         height: 100%;
         position: relative;
     }
+header .left_header{
+    float: left;
+    left: 5%
+}
+header .right_header{
+    float: right;
+    right: 5%;
+
+}
+    header .right_header,
+    header .left_header{
+        background: lightblue;
+        color: darkred;
+        position: absolute;
+        bottom: 100px;
+        width: 90%;
+        max-width: 450px;
+    }
+        header .right_header h3,
+        header .left_header h3{
+            font-size: 16px;
+            background: midnightblue;
+            color: white;
+            padding: 10px;
+            margin: 0 0 15px;
+        }
+
     header .headersection{
         background: lightblue;
         color: darkred;
@@ -71,7 +99,7 @@ header .headerimg{
                 background: cadetblue;
             }
 header nav{
-    background: darkgray;
+    background: lightblue;
 }
     header nav ul{
         margin: 0;
@@ -95,8 +123,9 @@ header nav{
             }
                 header nav ul li a:hover{
                     background: gold;
-                    color: goldenrod;
+                    color: red;
                 }
+
 
 #page{
     padding: 30px;
